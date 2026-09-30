@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>I'm Sorry ❤️</title>
+
+    <link rel="stylesheet" href="./I'm Sorry niki_files/style.css">
+<style type="text/css"><br>* {<br>  -webkit-user-select: text !important;<br>  -moz-user-select: text !important;<br>  -ms-user-select: text !important;<br>   user-select: text !important;<br>}<br></style></head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💖</span>
+        <span>❤️</span>
+    </div>
+
+    <main class="container">
+
+        <!-- PAGE 1 -->
+        <section class="page active" id="page1">
+
+            <div class="heart-wrapper">
+                <img src="./I'm Sorry niki_files/heart.png" class="heart" alt="Heart">
+            </div>
+
+            <h1>Hey Cutiepie 💕</h1>
+
+            <p>
+                Can we talk for a moment?
+                There’s something important I want to tell you.
+            </p>
+
+            <button onclick="nextPage(2)">
+                Continue 💗
+            </button>
+
+            <small>@Raviseervi</small>
+
+        </section>
+
+
+        <!-- PAGE 2 -->
+        <section class="page" id="page2">
+
+            <div class="emoji">🥺</div>
+
+            <h1>I'm Really Sorry ❤️</h1>
+
+            <p>
+                I know I made a mistake, and I honestly regret it.
+                I never wanted to hurt you.
+            </p>
+
+            <p>
+                Sometimes I make mistakes without realizing
+                how much they can hurt someone I care about.
+            </p>
+
+            <button onclick="nextPage(3)">
+                There's More... 💕
+            </button>
+
+        </section>
+
+
+        <!-- PAGE 3 -->
+        <section class="page" id="page3">
+
+            <div class="emoji">🌸</div>
+
+            <h1>You Mean A Lot To Me ❤️</h1>
+
+            <p>
+                I don't want one mistake to ruin all the beautiful
+                moments we've shared together.
+            </p>
+
+            <p>
+                I'm asking you from my heart...
+                please forgive me. 🥺
+            </p>
+
+            <button onclick="nextPage(4)">
+                One Last Thing 💗
+            </button>
+
+        </section>
+
+
+        <!-- PAGE 4 -->
+        <section class="page" id="page4">
+
+            <div class="emoji">❤️</div>
+
+            <h1>Can You Forgive Me?</h1>
+
+            <p>
+                I promise I'll try my best to understand,
+                listen and do better.
+            </p>
+
+            <div class="buttons">
+
+                <button class="yes" onclick="forgiven()">
+                    Yes ❤️
+                </button>
+
+                <button class="no" id="noButton" onclick="moveNoButton()">
+                    No 😭
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL PAGE -->
+        <section class="page" id="page5">
+
+            <div class="big-heart">❤️</div>
+
+            <h1>Thank You 🥹❤️</h1>
+
+            <p>
+                You have no idea how happy this makes me.
+            </p>
+
+            <p class="final-text">
+                I promise I'll take better care of your heart. 💕
+            </p>
+
+            <div class="love">
+                ❤️ ❤️ ❤️
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./I'm Sorry niki_files/script.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script type="text/javascript" src="chrome-extension://fpjppnhnpnknbenelmbnidjbolhandnf/content_script_web_accessible/ecp_regular.js"></script></body></html>
